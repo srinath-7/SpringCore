@@ -8,20 +8,19 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
-	<bean name="CarDealer"
-		class="com.sri.springcore.SpringCore.set.CarDealer">
+	<bean name="customer"
+		class="com.sri.springcore.SpringCore.Map.Customer">
 
-		<property name="name">
-			<value>Bosch</value>
+		<property name="id">
+			<value>20</value>
 		</property>
 
-		<property name="models">
-			<set>
-				<value>Sedan</value>
-				<value>Suv</value>
-				<value>Basic</value>
-			</set>
-
+		<property name="products">
+			<map>
+				<entry key="100" value="Iphone" />
+				<entry key="200" value="Ipad" />
+				<entry key="300" value="Shampoo" />
+			</map>
 		</property>
 	</bean>
 </beans>
