@@ -20,6 +20,13 @@ public class CarDealer {
 		this.models = models;
 	}
 	
+	@Override
+	public String toString() {
+		return "CarDealer [name=" + name + ", models=" + models + "]";
+	}
+	
+	
+	
 	
 	
 	
