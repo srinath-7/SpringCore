@@ -8,7 +8,9 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
-	<bean
-		class="com.sri.springcore.SpringCore.lifecycle.Interfaces.Patient"
-		id="patient" p:id="123" init-method = "hi" destroy-method = "bye" />
+	<bean name = "Items" class = "com.sri.springcore.SpringCore.assignment.Items" p:id = "80" p:name = "Soap" p:price = "95.0" p:quantity = "1.5"/>
+
+
+	<bean name="ShoppingCart"
+		class="com.sri.springcore.SpringCore.reftypes.Student" p:Items-ref = "Items"/>
 </beans>

@@ -1,6 +1,7 @@
 package com.sri.springcore.SpringCore.lifecycle.xmlConfig;
 
-public class Patient {
+
+public class Patient  {
 	
 	 private int id;
 

@@ -10,5 +10,5 @@
 
 	<bean
 		class="com.sri.springcore.SpringCore.lifecycle.Interfaces.Patient"
-		id="patient" p:id="123" init-method = "hi" destroy-method = "bye" />
+		id="patient" p:id="123" />
 </beans>
