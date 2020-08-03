@@ -7,12 +7,10 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
-  <bean class = "com.sri.springcore.SpringCore.innerbeans.Employee" name = "employee" p:id = "123">
+  <bean class = "com.sri.springcore.SpringCore.innerbeans.Employee" name = "employee" p:id = "123" scope = "prototype">
     <property name="address">
     <bean class = "com.sri.springcore.SpringCore.innerbeans.Address" p:hno = "798" p:street = "Ameenabad" p:city = "Melbourne">
     </bean>
     </property>
-  </bean>
-  
-   
+  </bean> 
 </beans>
