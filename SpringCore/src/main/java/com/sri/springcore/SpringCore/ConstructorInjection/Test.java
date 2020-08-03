@@ -1,9 +1,15 @@
 package com.sri.springcore.SpringCore.ConstructorInjection;
 
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
 public class Test {
 	
 	public static void main(String args[]) {
-		 System.out.println("");
+		 
+		ApplicationContext context = new ClassPathXmlApplicationContext("com/sri/springcore/SpringCore/ConstructorInjection/ConfigFile.xml");
+		Employee employee = (Employee) context.getBean("employee");
+		System.out.println(employee);
 	}
 
 }
