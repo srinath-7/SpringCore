@@ -8,7 +8,8 @@
     http://www.springframework.org/schema/context/spring-context.xsd">
 
     <bean class = "com.sri.springcore.SpringCore.ConstructorInjection.Ambugity.Addition"  name= "addition">
-    <constructor-arg value = "10" type = "int"/>
-    <constructor-arg value = "20" type = "int"/>
+    
+    <constructor-arg value = "20.3" type = "double" index = "1"/>
+    <constructor-arg value = "10" type = "int" index = "0"/>
     </bean>
 </beans>

@@ -3,14 +3,13 @@ package com.sri.springcore.SpringCore.ConstructorInjection.Ambugity;
 public class Addition {
 	
 	
-	Addition(double a, double b) {
-		System.out.println("Inside the constructor Double ");
+	Addition(int a, double b) {
+		System.out.println("Inside the constructor");
+		System.out.println(a);
+		System.out.println(b);
 	}
 	
 
-	Addition(int a, int b) {
-		System.out.println("Inside the constructor INT ");
-	}
 	
 	
 	
