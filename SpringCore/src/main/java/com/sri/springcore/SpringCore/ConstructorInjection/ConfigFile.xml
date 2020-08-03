@@ -13,13 +13,8 @@
 	<bean
 		class="com.sri.springcore.SpringCore.ConstructorInjection.Employee"
 		name="employee">
-		<constructor-arg>
-			<value>123</value>
-		</constructor-arg>
-		
-		<constructor-arg>
-			<ref bean="address" />
-		</constructor-arg>
-		
+		<constructor-arg value = "123"/>
+		<constructor-arg ref="address" />
+				
 	</bean>
 </beans>
