@@ -7,15 +7,19 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
     
-    <context:property-placeholder location = "com/sri/springcore/SpringCore/propertyplaceholder/database.properties"/>
+    <context:property-placeholder location = "com/sri/springcore/SpringCore/propertyplaceholder/Assignment/WsClient.properties"/>
     
-    <bean class = "com.sri.springcore.SpringCore.propertyplaceholder.MyDao" name = "mydao" >
+    <bean class = "com.sri.springcore.SpringCore.propertyplaceholder.Assignment.Client" name = "client" >
     <constructor-arg>
-    <value> ${dbServer}</value>
+    <value>${Url}</value>
     </constructor-arg>
     
     <constructor-arg>
-    <value>${dbPort}</value>
+    <value>${UserName}</value>
+    </constructor-arg>
+    
+    <constructor-arg>
+    <value>${Password}</value>
     </constructor-arg>
     </bean>
     
